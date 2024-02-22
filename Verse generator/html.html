@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="main.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="div1">
+
+
+        <h2>My Bible Verse</h2>
+       <p>"Enlightening and captivating scriptures to guide you through your day"</p>
+       <p><b>NIV version</b></p>
+      
+
+</div>
+<button onclick="generateQuote()">Generate Verse</button>
+    <script>   
+
+    let quotes=[' "Trust in the lord with all your heart; depend not on your own understanding. Seek his will in all you do, and he will shwo you whuch path to take  -Proverbs 3:5"',
+    ' "For this is how God loved the world: He gave his one and only Son, so that everyone who believes in him will not perish but have eternal life  -John 3:16"',
+     ' "Children obey your parents because you belong to the Lord, for this is the right thing to do  -Ephesians 6:1"',
+    ' "Oh, the joys of those who do not follow the advice of the wicked, or stand arround with sinners, or join in with mockers  -Psalms 1:1"',
+' "If you need wisdom, ask our generous God, and he will give it to you. He will not Rebuke you for asking  -James 1:5"']
+   
+
+    function generateQuote(){
+        let randIdx =Math.floor(Math.random() * quotes.length)
+        let myQuote = quotes[randIdx]
+        let div= document.querySelector('.div1')
+        div.innerText=myQuote
+
+     
+    }
+   
+
+    </script>
+</body>
+</html>

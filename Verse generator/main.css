@@ -1,0 +1,33 @@
+img{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
+.div1{
+    width:350px;
+    height: 180px;
+    padding :20px;
+   background-color: white;
+   margin-left: 470px;
+   margin-top: 150px;
+   border-radius: 15px;
+   box-shadow: 10px 10px 8px  #334799;
+}
+body{
+    background-color: #5372f0;
+   
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+button{
+    width:30%;
+    border:none;
+    height:5vh;
+    border-radius: 20px;
+    color: white;
+    background-color: #233166;
+    margin-top: 50px;
+    font-size:15px;
+    cursor: pointer;
+}
